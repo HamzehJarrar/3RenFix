@@ -861,16 +861,60 @@ margin-left: 120px;
     outline: none;
 }
 
-@media(max-width:360px)
-{
-    .nav ul{
-        display: none;
+@media screen and (max-width: 1440px) {
+    body{
+        width: 1440;
+        height: 700px;
     }
-    .hamburger {
-        display: block; 
+  }
+  
+  @media screen and (max-width: 768px) {
+    .inside-heropage{
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-top: 222px;
     }
+    
+  }
+  @media screen and (max-width: 1024px) {
+    .inside-heropage h1 {
+        
+        font-size: 20px;
+    }
+  }
+  @media screen and (max-width: 380px) {
+    .inside-heropage {
+        
+       display: none;
+    }
+  }
+  @media only screen and (max-width: 375px) {
 
+    header {
+      height: 15vh;
+    }
+  
+    .logo {
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+  
+   
+    .nav ul {
+      display: none;
+    }
+  
 
+    .nav ul.show {
+      display: flex;
+  
+    }
+  
+    .user {
+      margin-top: 20px;
+      margin-right: 20px;
+    }
+  
 }
 
 /*footer & buttom */
